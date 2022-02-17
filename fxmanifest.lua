@@ -1,13 +1,14 @@
-fx_version 'adamant'
+fx_version 'cerulean'
 game 'gta5'
 
-client_scripts { "**/cl_*.lua" }
-server_scripts { "@mysql-async/lib/MySQL.lua", "**/sv_*.lua" }
+ui_page('html/index.html') 
+client_scripts { 'client/cl_*.lua' }
+files { 'html/*.html', 'html/**/*' }
 
-author 'Lentokone'
-version '1.0.0'
-
--- DumpProof Fuck YEAH BY Lentokone
--- Vitun Mikkihiiri mitä vittua sä koitat dumptata!?!?!?
--- DISCORD <@228494142236393472> Voin antaa sulle saatana koko paskan!
--- VITUTAAKO HÄ VITUTTAAKO PAINU HELVETISTÄ VITTUUN
+exports {
+    'Progress',
+    'ProgressWithStartEvent',
+    'ProgressWithTickEvent',
+    'ProgressWithStartAndTick'
+}
+lua54 'yes'
